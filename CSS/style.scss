@@ -614,7 +614,7 @@ header {
 .edit-delete-container {
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
+  justify-self: flex-end;
 }
 
 .edit-container {
