@@ -155,15 +155,16 @@ button:focus {
 
 header {
   height: 300px;
+  padding-left: 8%;
   padding-top: 2%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .nav-container {
   @include flexCenterSetUp(row);
   justify-content: center;
-  width: 80%;
+  width: 90%;
 }
 
 .nav-content-container {
@@ -256,14 +257,18 @@ header {
 // SEARCH BAR STUFF
 
 .content-container.search-bar {
-  @include flexCenterSetUp(column);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: start;
   width: 100%;
   height: 100%;
 }
 
 .main-search-bar-form {
   position: relative;
-  width: 80%;
+  width: 70%;
 }
 
 #main-search-bar {
@@ -316,7 +321,7 @@ header {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  margin-left: 3%;
+  margin-left: 6%;
   background-color: black;
 }
 
@@ -534,7 +539,7 @@ header {
   position: relative;
   padding-bottom: $sectionSpacing;
   &.main-body-section-content.search-bar {
-    width: 95%;
+    width: 100%;
     justify-content: center;
     padding-bottom: 0;
   }

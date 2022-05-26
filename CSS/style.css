@@ -118,13 +118,14 @@ button:focus {
 
 header {
   height: 300px;
+  padding-left: 8%;
   padding-top: 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .nav-container {
@@ -146,7 +147,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80%;
+  width: 90%;
 }
 
 .nav-content-container {
@@ -270,19 +271,19 @@ header {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   width: 100%;
   height: 100%;
 }
 
 .main-search-bar-form {
   position: relative;
-  width: 80%;
+  width: 70%;
 }
 
 #main-search-bar {
@@ -371,7 +372,7 @@ header {
   height: 120px;
   width: 120px;
   border-radius: 50%;
-  margin-left: 3%;
+  margin-left: 6%;
   background-color: black;
 }
 
@@ -640,7 +641,7 @@ header {
 }
 
 .main-body-section-content.main-body-section-content.search-bar {
-  width: 95%;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
