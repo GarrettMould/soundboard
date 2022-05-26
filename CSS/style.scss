@@ -711,6 +711,7 @@ header {
   outline: none;
   width: 550px;
   height: 130px;
+  margin-bottom: 2%;
   font-size: 200%;
   border-radius: 20px;
 }
@@ -718,10 +719,13 @@ header {
 // FOOTER
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-top: 8px solid $blackColor;
   padding-top: 5%;
   padding-bottom: 5%;
-  height: auto;
+  height: 580px;
 }
 // DOWNLOAD LIST BUTTON
 
