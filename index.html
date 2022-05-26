@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0e62395a8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+
+    <title>Sound Board</title>
+  </head>
+  <body id="app" data-theme="purple">
+    <header id="header">
+      <div class="nav-container">
+        <div class="nav-content-container">
+          <div class="website-title-container">
+            <div class="website-title">Sound Board</div>
+          </div>
+          <div class="color-picker-container">
+            <button><div class="color-picker" id="open-color-menu"></div></button>
+        </div>
+      </div>
+    </header>
+    <section class="color-picker-section">
+      <div class="color-palette-container hide" id="color-palette-container">
+        <div class="color-palette">
+          <button class="color-picker-button" id="button-one"><div class="color" id="red"></div></button>
+          <button class="color-picker-button" id="button-two"><div class="color" id="blue"></div></button>
+          <button class="color-picker-button" id="button-three"><div class="color" id="orange"></div></button>
+          <button class="color-picker-button" id="button-four"><div class="color" id="green"></div></button>
+          <button class="color-picker-button" id="button-five"><div class="color" id="grey"></div></button>
+          
+        </div>
+      </div>
+
+
+    </section>
+    <section class="main-body-section search-bar">
+      <div class="main-body-section-content search-bar">
+        <div class="content-container search-bar">
+          <div class="main-row one search-bar">
+            <form class="main-search-bar-form">
+              <button type="button" id="btn-clear-search">
+                <i class="ph-x hide"></i>
+              </button>
+              <input
+                type="text"
+                id="main-search-bar"
+                placeholder="Search for an artist..."
+              />
+            </form>
+            <span class="dot"
+              ><button id="searchBtn" type="button">
+                <i class="fas fa-search"></i></button
+            ></span>
+            <select id="dropdown" style="display: none">
+              <option value="Artist">Artist</option>
+              <option value="Album">Album</option>
+            </select>
+          </div>
+          <div class="main-row two search-bar">
+            <div class="time-period-box left">
+              <div id="results" class="time-period hide">Results</div>
+            </div>
+          </div>
+          <div class="main-row two results"></div>
+        </div>
+      </div>
+    </section>
+    <ul class="full-list" id="full-list">
+      <li class="card-playlist colored light">
+        <div class="pop-up-delete-container hide">
+          <div class="title-set-container">
+            <div class="playlist-title">Delete Playlist?</div>
+          </div>
+          <div class="yes-no-container">
+            <div class="yes-delete-container"><button class="btn-delete yes-delete" id="yes-delete">Yes</button></div>
+            <div class="no-delete-container"><button class="btn-delete no-delete" id="no-delete">No</button></div>
+          </div>
+        </div>
+        <div class="pop-up-edit-container hide">
+          <div class="title-set-container">
+            <div class="playlist-title">Playlist Title</div>
+            <form class="main-search-bar-form edit-playlist">
+              <input
+                type="text"
+                id="main-search-bar"
+                class="user-playlist-name"
+                placeholder="Name your playlist..."
+              />
+            </form>
+          </div>
+          <div class="time-period-set-container">
+            <div class="playlist-time-period">Time Period</div>
+            <form class="main-search-bar-form edit-playlist">
+              <input
+                type="text"
+                id="main-search-bar"
+                class="user-playlist-time"
+                placeholder="Add a time period..."
+              />
+            </form>
+          </div>
+          <div class="edit-buttons-container">
+            <div class="save-changes-container">
+              <button class="btn-save-changes">Save Changes</button>
+            </div>
+            <div class="cancel-changes-container">
+              <button class="btn-cancel-changes">Cancel</button>
+            </div>
+          </div>
+        </div>
+        <section class="main-body-section">
+          <div class="main-body-section-content">
+            <div class="content-container all">
+              <div class="content-container">
+                <div class="main-row one">
+                  <div class="playlist-information-container">
+                    <div class="time-period-box left">
+                      <div class="time-period name">
+                        Add a Name
+                      </div>
+                    </div>
+                    <div class="time-period-box right">
+                      <div class="time-period numbers">
+                        Add a Time Period
+                      </div>
+                    </div>
+                  </div>
+                  <div class="edit-delete-container">
+                    <div class="edit-container">
+                      <button class="edit-icon"  id="one">
+                        <i class="ph-pencil-bold"></i>
+                      </button>
+                    </div>
+                    <div class="delete-container">
+                      <button class="delete-icon" id="one">
+                        <i class="ph-trash-bold"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="main-row two drop" class="drop-area">
+                  <ul class="album-draggables"></ul>
+                  
+                  <div class="add-new-album hide">
+                    <div class="plus-container">
+                      <button type="button" class="btn-add-new-album">
+                        <i class="ph-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </li>
+      
+    </ul>
+
+  
+    
+    <div class="footer add-area">
+        <div class="container">
+          <div class="row">
+            <div class="content-container">
+              <div class="main-row add-section">
+                <div class="btn-container add-section">
+                  <button
+                    type="button"
+                    id="addSectionBtn"
+                    class="btn add-section"
+                  >
+                    + Add New Section
+                  </button>
+                </div>
+              </div>
+
+              <div class="main-row add-section">
+                <div class="btn-container add-section">
+                  <button
+                    type="button"
+                    id="downloadBtn"
+                    class="btn add-section"
+                    onclick="changeText()"
+                  >
+                    Download List
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="JS/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script type="module" src="JS/jquery.touchSwipe.js"></script>
+    <script type="module" src="JS/jquery.touchSwipe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+  </body>
+</html>
