@@ -154,13 +154,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+}
+
+.logo-container {
+  margin-right: 5%;
+}
+
+.color-picker-container {
+  margin-left: auto;
 }
 
 .album-container-header {
@@ -184,14 +189,18 @@ header {
 }
 
 .website-title {
-  font-size: 450%;
-  font-weight: 600;
+  font-size: 420%;
+  font-weight: 900;
   font-family: "Inter", sans-serif;
   color: #121212;
 }
 
 .color-picker-section {
   padding-top: 3%;
+}
+
+.color-picker-container {
+  justify-self: flex-end;
 }
 
 .color-picker {

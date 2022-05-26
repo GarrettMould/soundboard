@@ -169,9 +169,16 @@ header {
 
 .nav-content-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.logo-container {
+  margin-right: 5%;
+}
+
+.color-picker-container {
+  margin-left: auto;
 }
 
 .album-container-header {
@@ -189,8 +196,8 @@ header {
 }
 
 .website-title {
-  font-size: 450%;
-  font-weight: 600;
+  font-size: 420%;
+  font-weight: 900;
   font-family: $fontFamily;
   color: $blackColor;
 }
@@ -201,6 +208,9 @@ header {
   padding-top: 3%;
 }
 
+.color-picker-container {
+  justify-self: flex-end;
+}
 .color-picker {
   height: 110px;
   width: 110px;
