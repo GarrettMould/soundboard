@@ -455,9 +455,9 @@ header {
 .playlist-title,
 .playlist-time-period {
   color: #faf9f6;
-  font-size: 350%;
-  font-weight: 600;
-  margin-bottom: 3%;
+  font-size: 300%;
+  font-weight: 700;
+  margin-bottom: 2%;
 }
 
 .pop-up-edit-container {
